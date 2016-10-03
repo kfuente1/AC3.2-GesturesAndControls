@@ -12,8 +12,8 @@ class GesturesViewController: UIViewController {
     
     var minScoreForWin = 10
     var switchingScore = true
-    var correctColorValue = UIColor()
-    var wrongColorValue = UIColor()
+    var correctColorValue = UIColor.white
+    var wrongColorValue = UIColor.white
     
     enum ActionGesture: Int {
         case tap, doubleTap, twoFingerTap, leftSwipe, rightSwipe
@@ -27,7 +27,7 @@ class GesturesViewController: UIViewController {
     
     var currentScore: Int = 0 {
         willSet {
-            self.scoreLabel.text = "Score: \(newValue)"
+            self.scoreLabel.text = "\(newValue)"
         }
     }
     

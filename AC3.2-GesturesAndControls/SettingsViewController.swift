@@ -10,8 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    var correctcolor = UIColor()
-    var wrongColor = UIColor()
+    var correctcolor = UIColor.white
+    var wrongColor = UIColor.white
     var resetScore = true
     var minScoreForWin = 10
    
